@@ -1,11 +1,12 @@
 
 import { Mail, Phone, Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-pink-900 to-rose-900 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 via-pink-900 to-rose-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Contact Info */}
@@ -18,23 +19,23 @@ const Footer = () => {
             
             <div className="space-y-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:sollyibella@gmail.com"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300 group"
               >
                 <div className="p-2 bg-pink-600 rounded-lg group-hover:bg-pink-700 transition-colors duration-300">
                   <Mail size={20} />
                 </div>
-                <span>your.email@example.com</span>
+                <span>sollyibella@gmail.com</span>
               </a>
               
               <a
-                href="tel:+1234567890"
+                href="tel:+962799180174"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300 group"
               >
                 <div className="p-2 bg-rose-600 rounded-lg group-hover:bg-rose-700 transition-colors duration-300">
                   <Phone size={20} />
                 </div>
-                <span>+1 (234) 567-890</span>
+                <span>+962 799 180 174</span>
               </a>
             </div>
           </div>
@@ -43,14 +44,20 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'About', path: '/about' },
+                { name: 'Skills', path: '/skills' },
+                { name: 'Projects', path: '/projects' },
+                { name: 'Contact', path: '/contact' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.path}
                     className="text-gray-300 hover:text-pink-300 transition-colors duration-300 hover:underline"
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -99,7 +106,7 @@ const Footer = () => {
         <div className="border-t border-pink-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Aseel Khalid. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm flex items-center gap-1">
               Made with <Heart size={16} className="text-pink-400" /> using React & Tailwind CSS
