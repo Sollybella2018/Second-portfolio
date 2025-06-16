@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleDownloadCV = () => {
@@ -35,12 +36,12 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-900">
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               className="inline-flex items-center px-8 py-3 bg-pink-600 text-white font-medium rounded-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
-            </a>
+            </Link>
             <button
               onClick={handleDownloadCV}
               className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
