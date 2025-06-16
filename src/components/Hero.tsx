@@ -2,6 +2,16 @@ import React from 'react';
 import { ChevronDown, Download } from 'lucide-react';
 
 const Hero = () => {
+  const handleDownloadCV = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/Aseel Khalid resume.pdf';
+    link.download = 'Aseel_Khalid_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-pink-900 via-rose-900 to-purple-900">
       {/* Background Animation */}
@@ -14,10 +24,10 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">Your Name</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">Aseel Khalid</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up animation-delay-300">
-            Full Stack Developer & UI/UX Enthusiast
+            Front End Developer & UI/UX Enthusiast
           </p>
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up animation-delay-600">
             I create beautiful, responsive web applications with modern technologies. 
@@ -31,13 +41,13 @@ const Hero = () => {
             >
               View My Work
             </a>
-            <a
-              href="#contact"
+            <button
+              onClick={handleDownloadCV}
               className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
             >
               <Download className="mr-2" size={20} />
               Download CV
-            </a>
+            </button>
           </div>
         </div>
       </div>
