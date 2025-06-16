@@ -54,7 +54,7 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {projects.filter(project => project.featured).map((project, index) => (
+          {projects.filter(project => project.featured).map((project) => (
             <div
               key={project.title}
               className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-pink-100"
@@ -114,7 +114,7 @@ const Projects = () => {
 
         {/* Other Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.filter(project => !project.featured).map((project, index) => (
+          {projects.filter(project => !project.featured).map((project) => (
             <div
               key={project.title}
               className="bg-pink-50 rounded-lg p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-pink-100"

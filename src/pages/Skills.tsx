@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Skills = () => {
   const skills = [
     {
@@ -41,7 +39,7 @@ const Skills = () => {
   ];
 
   const additionalSkills = [
-    'Node.js', 'Git & GitHub', 'Responsive Design', 'REST APIs', 
+    'Node.js', 'Git & GitHub', 'Responsive Design', 'REST APIs',
     'UI/UX Design', 'Performance Optimization', 'Testing', 'Vite'
   ];
 
@@ -72,7 +70,7 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {skill.name}
                 </h3>
-                
+
                 {/* Progress Bar */}
                 <div className="w-full bg-pink-100 rounded-full h-3 mb-2">
                   <div
