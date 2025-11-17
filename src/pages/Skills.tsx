@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 import React from 'react';
 
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+
 const Skills = () => {
   const skills = [
     {
@@ -44,11 +43,9 @@ const Skills = () => {
   ];
 
   const additionalSkills = [
-<<<<<<< HEAD
-    'Node.js', 'Git & GitHub', 'Responsive Design', 'REST APIs', 
-=======
     'Node.js', 'Git & GitHub', 'Responsive Design', 'REST APIs',
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+
+    'Node.js', 'Git & GitHub', 'Responsive Design', 'REST APIs',
     'UI/UX Design', 'Performance Optimization', 'Testing', 'Vite'
   ];
 
@@ -79,11 +76,11 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {skill.name}
                 </h3>
-<<<<<<< HEAD
-                
-=======
 
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+
+
+
+
                 {/* Progress Bar */}
                 <div className="w-full bg-pink-100 rounded-full h-3 mb-2">
                   <div
@@ -94,13 +91,13 @@ const Skills = () => {
                 <span className="text-sm text-gray-600 font-medium">
                   {skill.level}%
                 </span>
-              </div>
-            </div>
+              </div >
+            </div >
           ))}
-        </div>
+        </div >
 
         {/* Additional Skills */}
-        <div className="text-center">
+        < div className="text-center" >
           <h3 className="text-2xl font-semibold text-gray-900 mb-8">
             Other Technologies & Tools
           </h3>
@@ -114,10 +111,10 @@ const Skills = () => {
               </span>
             ))}
           </div>
-        </div>
+        </div >
 
         {/* Skills Categories */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        < div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8" >
           <div className="text-center p-6 bg-white rounded-xl shadow-lg border border-pink-100">
             <h4 className="text-xl font-semibold text-gray-900 mb-4">Frontend Development</h4>
             <ul className="text-gray-600 space-y-2">
@@ -150,9 +147,9 @@ const Skills = () => {
               <li>• User Experience Testing</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
+        </div >
+      </div >
+    </section >
   );
 };
 

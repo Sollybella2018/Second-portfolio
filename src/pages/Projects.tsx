@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 import React from 'react';
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
@@ -82,132 +80,136 @@ const Projects = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 <<<<<<< HEAD
-            {featuredProjects.map((project, index) => (
+  {
+    featuredProjects.map((project, index) => (
 =======
             {featuredProjects.map((project) => (
 >>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
-              <div
-                key={project.title}
-                className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-pink-100"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pink-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-pink-100 text-pink-800 text-sm font-medium rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex gap-4">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
-                    >
-                      <Github size={18} />
-                      Code
-                    </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors duration-300"
-                    >
-                      <ExternalLink size={18} />
-                      Live Demo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div
+        key={project.title}
+        className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-pink-100"
+      >
+        <div className="relative overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-pink-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
-        {/* Other Projects */}
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Other Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<<<<<<< HEAD
-            {otherProjects.map((project, index) => (
-=======
-            {otherProjects.map((project) => (
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
-              <div
-                key={project.title}
-                className="bg-pink-50 rounded-lg p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-pink-100 group"
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            {project.title}
+          </h3>
+          <p className="text-gray-600 mb-4 leading-relaxed">
+            {project.description}
+          </p>
+
+          <div className="flex flex-wrap gap-2 mb-6">
+            {project.technologies.map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 bg-pink-100 text-pink-800 text-sm font-medium rounded-full"
               >
-                <div className="mb-4">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-4 text-sm">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-white text-gray-700 text-xs font-medium rounded border border-pink-200"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                <div className="flex gap-3">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-gray-700 hover:text-gray-900 transition-colors duration-300"
-                  >
-                    <Github size={16} />
-                    <span className="text-sm">Code</span>
-                  </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-pink-600 hover:text-pink-800 transition-colors duration-300"
-                  >
-                    <ExternalLink size={16} />
-                    <span className="text-sm">Demo</span>
-                  </a>
-                </div>
-              </div>
+                {tech}
+              </span>
             ))}
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+            >
+              <Github size={18} />
+              Code
+            </a>
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors duration-300"
+            >
+              <ExternalLink size={18} />
+              Live Demo
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    ))
+  }
+          </div >
+        </div >
+
+  {/* Other Projects */ }
+  < div >
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Other Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<<<<<<< HEAD
+{
+  otherProjects.map((project, index) => (
+=======
+            {otherProjects.map((project) => (
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+    <div
+      key={project.title}
+      className="bg-pink-50 rounded-lg p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-pink-100 group"
+    >
+      <div className="mb-4">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-40 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+        {project.title}
+      </h3>
+      <p className="text-gray-600 mb-4 text-sm">
+        {project.description}
+      </p>
+
+      <div className="flex flex-wrap gap-2 mb-4">
+        {project.technologies.map((tech) => (
+          <span
+            key={tech}
+            className="px-2 py-1 bg-white text-gray-700 text-xs font-medium rounded border border-pink-200"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex gap-3">
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-gray-700 hover:text-gray-900 transition-colors duration-300"
+        >
+          <Github size={16} />
+          <span className="text-sm">Code</span>
+        </a>
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-pink-600 hover:text-pink-800 transition-colors duration-300"
+        >
+          <ExternalLink size={16} />
+          <span className="text-sm">Demo</span>
+        </a>
+      </div>
+    </div>
+  ))
+}
+          </div >
+        </div >
+      </div >
+    </section >
   );
 };
 

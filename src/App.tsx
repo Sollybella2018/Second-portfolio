@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
