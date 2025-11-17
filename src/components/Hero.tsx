@@ -1,18 +1,11 @@
-
 import { ChevronDown, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-
 const Hero = () => {
   const handleDownloadCV = () => {
-    // Create a link element and trigger download
     const link = document.createElement('a');
     link.href = '/Aseel Khalid resume.pdf';
     link.download = 'Aseel_Khalid_Resume.pdf';
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -33,16 +26,16 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-
-            Hi, I'm{" "}
+            Hi, I'm{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">
               Your Name
             </span>
-
           </h1>
+
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-up animation-delay-300">
             Front End Developer & UI/UX Enthusiast
           </p>
+
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up animation-delay-600">
             I create beautiful, responsive web applications with modern
             technologies. Passionate about clean code, user experience, and
@@ -55,17 +48,13 @@ const Hero = () => {
               className="inline-flex items-center px-8 py-3 bg-pink-600 text-white font-medium rounded-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
             </Link>
+
             <button onClick={handleDownloadCV} className="focus:outline-none">
               <div className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
                 <Download className="mr-2" size={20} />
                 Download CV
               </div>
-
             </button>
           </div>
         </div>

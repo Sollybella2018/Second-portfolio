@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 import React from 'react';
-=======
->>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
+
 import { Code, Coffee, Heart, Lightbulb } from 'lucide-react';
 
 const About = () => {
@@ -25,21 +24,21 @@ const About = () => {
               className="rounded-2xl shadow-2xl w-full h-96 object-cover"
             />
           </div>
-          
+
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
               Hello! I'm Aseel Khalid
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a passionate Front-End Developer with a strong background in creating dynamic and responsive web applications. 
+              I'm a passionate Front-End Developer with a strong background in creating dynamic and responsive web applications.
               With expertise in modern technologies like React, JavaScript, and CSS, I love bringing creative ideas to life through code.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              My journey in web development started with a Bachelor's degree in Management Information Systems from Al Ahlia Amman University. 
+              My journey in web development started with a Bachelor's degree in Management Information Systems from Al Ahlia Amman University.
               Since then, I've been continuously learning and evolving with the ever-changing landscape of web technologies.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, 
+              When I'm not coding, you can find me exploring new design trends, contributing to open-source projects,
               or sharing my knowledge with the developer community.
             </p>
           </div>
