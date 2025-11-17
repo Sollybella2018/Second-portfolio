@@ -3,7 +3,10 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -64,7 +67,11 @@ const Navbar = () => {
                   }`}
                 >
                   {item.name}
+<<<<<<< HEAD
                 </Link> 
+=======
+                </Link>
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
               ))}
             </div>
           </div>

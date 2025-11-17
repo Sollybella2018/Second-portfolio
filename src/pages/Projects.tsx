@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
@@ -78,7 +81,11 @@ const Projects = () => {
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<<<<<<< HEAD
             {featuredProjects.map((project, index) => (
+=======
+            {featuredProjects.map((project) => (
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
               <div
                 key={project.title}
                 className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-pink-100"
@@ -141,7 +148,11 @@ const Projects = () => {
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Other Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<<<<<<< HEAD
             {otherProjects.map((project, index) => (
+=======
+            {otherProjects.map((project) => (
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
               <div
                 key={project.title}
                 className="bg-pink-50 rounded-lg p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-pink-100 group"

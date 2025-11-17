@@ -9,7 +9,10 @@ const Hero = () => {
     const link = document.createElement('a');
     link.href = '/Aseel Khalid resume.pdf';
     link.download = 'Aseel_Khalid_Resume.pdf';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -52,7 +55,10 @@ const Hero = () => {
               className="inline-flex items-center px-8 py-3 bg-pink-600 text-white font-medium rounded-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ba7c0c7a351a43d4451dcc18b90bfc4f1db8ba4
             </Link>
             <button onClick={handleDownloadCV} className="focus:outline-none">
               <div className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
